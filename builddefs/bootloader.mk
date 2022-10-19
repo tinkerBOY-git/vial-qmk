@@ -45,7 +45,11 @@
 #
 # BOOTLOADER_SIZE can still be defined manually, but it's recommended
 # you add any possible configuration to this list
-
+ifeq ($(strip $(BOOTLOADER)), angel-loader)
+    OPT_DEFS += -DBOOTLOADER_ANGEL_LOADER
+    BOOTLOADER_TYPE = angel_loader
+	BOOTLOADER_SIZE = 2048
+endif
 ifeq ($(strip $(BOOTLOADER)), custom)
     OPT_DEFS += -DBOOTLOADER_CUSTOM
     BOOTLOADER_TYPE = custom

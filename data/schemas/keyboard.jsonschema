@@ -87,6 +87,7 @@
         "bootloader": {
             "type": "string",
             "enum": [
+				"angel-loader",
                 "vibl",
                 "atmel-dfu",
                 "bootloadhid",
