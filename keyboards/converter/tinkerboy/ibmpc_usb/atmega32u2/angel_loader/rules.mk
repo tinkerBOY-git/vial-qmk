@@ -1,8 +1,6 @@
-# MCU name
+LTO_ENABLE = yes
 MCU = atmega32u2
-
-# Bootloader selection - 1024 size
-BOOTLOADER = boothid 
+BOOTLOADER = angel-loader
 
 # Build Options
 #   change yes to no to disable
@@ -35,10 +33,4 @@ AVR_USE_MINIMAL_PRINTF = yes
 MUSIC_ENABLE = no
 
 NO_USB_STARTUP_CHECK = yes
-
 ENCODER_ENABLE = no
-#MIDI_ENABLE = no
-#POINTING_DEVICE_ENABLE = no
-#STENO_ENABLE = no
-#UCIS_ENABLE = no
-#LEADER_ENABLE = no

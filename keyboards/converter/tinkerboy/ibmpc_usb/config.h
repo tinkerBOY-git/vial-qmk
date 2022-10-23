@@ -20,6 +20,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define VENDOR_ID       0xFEED
 #define PRODUCT_ID      0x6536
+//#define PRODUCT_ID      0x0000
 #define DEVICE_VER      0x0102
 #define MANUFACTURER    TINKERBOY
 #define PRODUCT         tinkeBOY [ibmpckb.usb]

@@ -18,6 +18,34 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
+// Reduced feature set to fit RAM, as suggested by Giovanni Castro
+#define VIAL_TAP_DANCE_ENTRIES 1
+#define VIAL_COMBO_ENTRIES 2
+#define VIAL_KEY_OVERRIDE_ENTRIES 1
+#define DYNAMIC_KEYMAP_LAYER_COUNT 2
+
+#define VIAL_KEYBOARD_UID {0x87, 0x9E, 0x0D, 0x68, 0xD2, 0xB5, 0x98, 0xA2}
+#define VIAL_UNLOCK_COMBO_ROWS { 2, 2 }
+#define VIAL_UNLOCK_COMBO_COLS { 9, 8 }
+
+#define BOOTMAGIC_LITE_ROW 2
+#define BOOTMAGIC_LITE_COLUMN 9
+
+#ifndef NO_DEBUG
+#define NO_DEBUG
+#endif // !NO_DEBUG
+#if !defined(NO_PRINT) && !defined(CONSOLE_ENABLE)
+#define NO_PRINT
+#endif // !NO_PRINT
+
+#define NO_ACTION_ONESHOT
+#define NO_MUSIC_MODE
+#undef LOCKING_SUPPORT_ENABLE
+#undef LOCKING_RESYNC_ENABLE
+#define LAYER_STATE_8BIT
+
+#define NO_ACTION_TAPPING
+
 /*
  * Pin and interrupt configuration
  */
@@ -87,7 +115,3 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     IBMPC_RST_DDR  |=  (1<<IBMPC_RST_BIT1);  \
 } while (0)
 
-// Reduced feature set to fit RAM, as suggested by Giovanni Castro
-#define VIAL_TAP_DANCE_ENTRIES 2
-#define VIAL_COMBO_ENTRIES 2
-#define VIAL_KEY_OVERRIDE_ENTRIES 2

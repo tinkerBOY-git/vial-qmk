@@ -1,13 +1,10 @@
-# MCU name
-MCU = atmega32u2
-
-# Bootloader selection
-BOOTLOADER = atmel-dfu
+MCU = RP2040
+BOOTLOADER = rp2040
 
 # Build Options
 #   change yes to no to disable
 #
-BOOTMAGIC_ENABLE = no       # Virtual DIP switch configuration
+BOOTMAGIC_ENABLE = yes       # Virtual DIP switch configuration
 MOUSEKEY_ENABLE = yes       # Mouse keys
 EXTRAKEY_ENABLE = yes       # Audio control and System control
 CONSOLE_ENABLE = no         # Console for debug
@@ -20,8 +17,10 @@ BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 RGBLIGHT_ENABLE = no        # Enable keyboard RGB underglow
 BLUETOOTH_ENABLE = no       # Enable Bluetooth
 AUDIO_ENABLE = no           # Audio output
-CUSTOM_MATRIX = yes
+CUSTOM_MATRIX = no
 
-SRC += matrix.c ibmpc.c
+#SRC += matrix.c ibmpc.c
 
 # EEPROM_DRIVER = i2c
+QMK_SETTINGS = yes
+
