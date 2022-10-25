@@ -19,17 +19,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #pragma once
 
 // Reduced feature set to fit RAM, as suggested by Giovanni Castro
-#define VIAL_TAP_DANCE_ENTRIES 2
-#define VIAL_COMBO_ENTRIES 2
-//#define VIAL_KEY_OVERRIDE_ENTRIES 1
-#define DYNAMIC_KEYMAP_LAYER_COUNT 2
+#define VIAL_TAP_DANCE_ENTRIES 8
+#define VIAL_COMBO_ENTRIES 8
+#define VIAL_KEY_OVERRIDE_ENTRIES 8
+#define DYNAMIC_KEYMAP_LAYER_COUNT 12
 
 #define VIAL_KEYBOARD_UID {0x87, 0x9E, 0x0D, 0x68, 0xD2, 0xB5, 0x98, 0xA2}
 #define VIAL_UNLOCK_COMBO_ROWS { 2, 2 }
 #define VIAL_UNLOCK_COMBO_COLS { 9, 8 }
 
-//#define BOOTMAGIC_LITE_ROW 2
-//#define BOOTMAGIC_LITE_COLUMN 9
+#define BOOTMAGIC_LITE_ROW 2
+#define BOOTMAGIC_LITE_COLUMN 9
 
 #ifndef NO_DEBUG
 #define NO_DEBUG

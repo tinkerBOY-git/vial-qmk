@@ -1,11 +1,11 @@
 LTO_ENABLE = yes
-MCU = atmega32u2
+MCU = atmega32u4
 BOOTLOADER = angel-loader
 
 # Build Options
 #   change yes to no to disable
 #
-BOOTMAGIC_ENABLE = no       # Virtual DIP switch configuration
+BOOTMAGIC_ENABLE = yes       # Virtual DIP switch configuration
 MOUSEKEY_ENABLE = yes       # Mouse keys
 EXTRAKEY_ENABLE = yes       # Audio control and System control
 CONSOLE_ENABLE = no         # Console for debug
@@ -23,7 +23,7 @@ CUSTOM_MATRIX = yes
 SRC += matrix.c ibmpc.c
 
 # EEPROM_DRIVER = i2c
-QMK_SETTINGS = no
+QMK_SETTINGS = yes
 
 SPACE_CADET_ENABLE = no
 GRAVE_ESC_ENABLE = no
@@ -34,5 +34,3 @@ MUSIC_ENABLE = no
 
 NO_USB_STARTUP_CHECK = yes
 ENCODER_ENABLE = no
-#COMBO_ENABLE = no
-KEY_OVERRIDE_ENABLE = no
