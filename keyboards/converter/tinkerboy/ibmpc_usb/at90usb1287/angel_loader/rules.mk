@@ -1,6 +1,6 @@
 LTO_ENABLE = yes
 MCU = at90usb1287
-BOOTLOADER = angel-loader
+BOOTLOADER = atmel-dfu
 
 # Build Options
 #   change yes to no to disable
