@@ -1,0 +1,2 @@
+qmk clean && make converter/tinkerboy/ibmpc_usb/atmega32u2/atmel_dfu:vial && mv *.hex ~/bin/ib
+mpc_usb
